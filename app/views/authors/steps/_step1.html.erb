@@ -3,11 +3,11 @@
 <%= form_for @author, url: { action: "step2" }, remote: true do |f| %>
   <div class="form-group">
     <label for="email">Email address:</label>
-    <%= email_field :author, :username, class: "form-control" %>
+    <%= email_field :author, :username, class: "form-control", required: true %>
   </div>
   <div class="form-group">
     <label for="pwd">Password:</label>
-    <%= password_field :author, :password, class: "form-control"%>
+    <%= password_field :author, :password, class: "form-control", required: true %>
   </div>
   
   <div class="col-xs-6 col-xs-offset-3">

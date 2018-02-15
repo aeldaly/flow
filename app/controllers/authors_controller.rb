@@ -2,6 +2,10 @@ class AuthorsController < ApplicationController
   before_action :load_author, only: [:show]
   before_action :assign_author, only: [:step2, :step3, :create]
 
+  def index
+    @authors = Author.all
+  end
+
   def new
   end
 
