@@ -1,0 +1,25 @@
+<h3>Please confirm the values in the form</h3>
+<h3>Feel free to modify any fields and click "Save Author" when ready</h3>
+
+sdjlkfhadsas: <%= @author.password %>
+
+<%= form_for @author, url: { action: "create" }, remote: true do |f| %>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <%= email_field :author, :username, class: "form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <label for="first_name">First Name:</label>
+    <%= f.text_field :first_name, class: "form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <label for="last_name">Last Name:</label>
+    <%= f.text_field :last_name, class: "form-control" %>
+  </div>
+  
+  <div class="col-xs-6 col-xs-offset-3">
+    <button type="submit" class="btn btn-primary btn-block">Save Author</button>
+  </div>
+<% end %>
