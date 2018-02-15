@@ -14,3 +14,19 @@
 //= require turbolinks
 //= require jquery
 //= require_tree .
+
+$(document).ready(function () {
+  $('body').on('click', '#show-password', function () {
+    var passwordField = $('#author_password');
+    var passwordFieldType = passwordField.attr('type');
+
+    if (passwordFieldType == 'password') {
+      passwordField.attr('type', 'text');
+      $(this).html('Hide Password');
+    } else {
+      passwordField.attr('type', 'password');
+      $(this).html('Reveal Password');
+    }
+  });
+
+});

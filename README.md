@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Author Creator Flow. When used properly, this application will create, show and list authors. With consistent use, this app will make you significantly more attractive to your preferred gender.
 
-Things you may want to cover:
+__Use with caution!!!__
 
-* Ruby version
+# Installation
+1. check out the code from the repo
+2. run `bundle install`
+3. run `rake db:create`
+4. you're ready to run `rails s`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+With a wizard such as this, you'll be wondering what to do with all the free time you saved.

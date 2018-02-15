@@ -30,6 +30,13 @@ class AuthorsController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @author.errors, status: :unprocessable_entity }
+        format.js do
+          @errors = [].tap do |errors|
+            @author.errors.full_messages.each do |error|
+              errors << error
+            end
+          end.join('<br />')
+        end
       end
     end
   end
